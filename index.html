@@ -9,4 +9,30 @@
 <body>
   <a href="javascript:void(0)" id="test">save</a>
 </body>
+<script>// https://www.dropbox.com/developers/datastore/tutorial/js
+// https://www.dropbox.com/developers/datastore/docs/js#Dropbox.Client
+$(document).ready(function(){
+   console.log("started");
+  
+  var client = new Dropbox.Client({key: "e2xn7mxdbrzs3ux",secret:"yxtp956mw7vp7iy"});
+
+// Try to finish OAuth authorization.
+client.authenticate({interactive: false}, function (error) {
+    if (error) {
+        alert('Authentication error: ' + error);
+    } else {
+      console.log("working");
+    }
+});
+  if (client.isAuthenticated()) {
+    console.log("Authenticated");
+  }
+  
+  $("#test").click(function(){
+    console.log("clicked");
+    client.authenticate();
+    client.writeFile("/test.txt","texto teste");
+  });
+  
+});</script>
 </html>
