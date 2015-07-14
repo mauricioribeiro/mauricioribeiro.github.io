@@ -1,10 +1,15 @@
 /**
 Mauricio Ribeiro's Github style ;)
+http://mauricioribeiro.github.io/
 **/
 html,body{
 	margin: 0;
 	padding: 0;
-	background: #000;
+	background: #101010; /* binary color LOL */
+}
+*{
+	font-family: 'Shadows Into Light', cursive;
+	color: #fff
 }
 a{
 	text-decoration: none
