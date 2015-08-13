@@ -5,7 +5,8 @@ http://mauricioribeiro.github.io/pyNeural
 html,body{
 	margin: 0;
 	padding: 0;
-	background: #fff; /* binary color LOL */
+	background: #fff;
+	text-align: center
 }
 *{
 	font-family: 'Helvetica';
@@ -16,5 +17,5 @@ a{
 }
 
 #logo{
-	margin: 30px auto 10px;
+	margin: 30px auto 0;
 }
